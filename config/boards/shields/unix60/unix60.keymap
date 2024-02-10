@@ -5,6 +5,7 @@
 #define DEFAULT 0
 #define FN 1
 #define BT 2
+#define CH 3
 
 / {
     keymap {
@@ -12,18 +13,18 @@
 
         default_layer {
             bindings = <
-                &kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQUAL &kp BSLH &kp GRAVE
-                &kp TAB &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp LBKT &kp RBKT &kp BSPC
-                &kp LCTRL &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI &kp SQT &kp ENTER
-                &kp LSHFT &mo FN &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp RSHFT &mo FN
-                &kp LALT &kp LGUI                 &kp SPACE                   &kp RGUI &kp RALT
+                &kp ESC   &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp MINUS &kp EQUAL &kp BSLH &kp GRAVE
+                &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O     &kp P     &kp LBKT  &kp RBKT  &kp BSPC
+                &kp LCTRL &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT   &kp ENTER
+                &kp LSHFT &mo CH    &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH &kp RSHFT &mo FN
+                          &kp LALT  &kp LGUI                    &kp SPACE                       &kp RGUI  &mo bt
             >;
         };
 
         fn_layer {
             bindings = <
-                &kp K_POWER &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp INS &kp DEL
-                &kp CAPS &trans &trans &trans &sys_reset &trans &trans &bootloader &kp PSCRN &kp SLCK &kp PAUSE_BREAK &kp UP &trans &kp BSPC
+                &kp K_POWER &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp INS &trans
+                &trans &trans &trans &trans &sys_reset &trans &trans &bootloader &kp PSCRN &kp SLCK &kp PAUSE_BREAK &kp UP &trans &kp DEL
                 &trans &kp K_VOL_DN &kp K_VOL_UP &kp K_MUTE &kp K_EJECT &trans &kp KP_MULTIPLY &kp KP_DIVIDE &kp HOME &kp PG_UP &kp LEFT &kp RIGHT &trans
                 &trans &trans &trans &trans &trans &to BT &kp KP_PLUS &kp KP_MINUS &kp END &kp PG_DN &kp DOWN &trans &trans
                 &trans &trans               &trans                    &trans &trans
@@ -39,5 +40,15 @@
                 &none &none             &none                   &none &none
             >;
         };
+
+        ch_layer {
+            bindings = <
+                &kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQUAL &kp BSLH &kp GRAVE
+                &kp TAB &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp LBKT &kp RBKT &kp BSPC
+                &kp LCTRL &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI &kp SQT &kp ENTER
+                &kp LSHFT &mo CH &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp RSHFT &mo FN
+                &kp LALT &kp LGUI                 &kp SPACE                   &kp RGUI &mo bt
+            >;
+        }
     };
 };

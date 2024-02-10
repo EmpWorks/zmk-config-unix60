@@ -4,7 +4,7 @@
 
 #define DEFAULT 0
 #define FN 1
-#define BT 2
+#define WRLS 2
 #define CH 3
 
 / {
@@ -17,7 +17,7 @@
                 &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O     &kp P     &kp LBKT  &kp RBKT  &kp BSPC
                 &kp LCTRL &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT   &kp ENTER
                 &kp LSHFT &mo CH    &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH &kp RSHFT &mo FN
-                          &kp LGUI  &kp LALT                    &kp SPACE                       &kp RALT  &kp RGUI  
+                          &kp LGUI  &kp LALT                    &kp SPACE                       &kp RALT  &mo WRLS
             >;
         };
 
@@ -31,7 +31,7 @@
             >;
         };
 
-        bt_layer {
+        wrls_layer {
             bindings =<
                 &to DEFAULT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none      &none        &none      &none &none &none &none &none
                 &none       &none        &none        &none        &none        &none        &none &none      &none        &none      &none &none &none &none

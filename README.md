@@ -3,7 +3,7 @@ Unix60 is a HHKB clone developed by mkdl. You can find its repo [here](https://g
 ## Current state
 - compiles without any issues :)
 - every key works :))
-- broken keymap
+- keymap works as it should and the keymap file is somewhat readable now
 - no idea about bluetooth
 - left shift does not work with keys on the same matrix row (j, k, l, ;, ', and enter)
 ## Layout

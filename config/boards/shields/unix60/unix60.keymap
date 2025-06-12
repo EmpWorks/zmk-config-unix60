@@ -13,7 +13,7 @@
 
         default_layer {
             bindings = <
-                &kp ESC   
+                &kp ESC   &kp SPACE
                 &kp N1    &kp GRAVE &kp N3   &kp BSPC      
                 &kp N7    &kp N8    &kp N9   &kp MINUS 
                 &kp N4    &kp N5    &kp N6
@@ -27,7 +27,7 @@
             bindings = <
                
                 
-                &kp ESC   
+                &kp ESC   &kp SPACE
                 &kp N1    &kp GRAVE &kp N3   &kp BSPC      
                 &kp N7    &kp N8    &kp N9   &kp MINUS 
                 &kp N4    &kp N5    &kp N6
@@ -36,7 +36,7 @@
             >;
         };
 
-        &kp ESC   
+                &kp ESC   &kp SPACE
                 &kp N1    &kp GRAVE &kp N3   &kp BSPC      
                 &kp N7    &kp N8    &kp N9   &kp MINUS 
                 &kp N4    &kp N5    &kp N6
@@ -47,7 +47,7 @@
 
         ch_layer {
             bindings = <
-                &kp ESC   
+                &kp ESC   &kp SPACE
                 &kp N1    &kp GRAVE &kp N3   &kp BSPC      
                 &kp N7    &kp N8    &kp N9   &kp MINUS 
                 &kp N4    &kp N5    &kp N6

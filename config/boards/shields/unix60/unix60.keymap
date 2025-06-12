@@ -6,6 +6,9 @@
 #define FN 1
 #define WRLS 2
 #define CH 3
+&led_strip {
+    chain-length = <18>;
+};
 
 / {
     keymap {

@@ -6,9 +6,17 @@
 #define FN 1
 #define WRLS 2
 #define CH 3
-&led_strip {
-    chain-length = <18>;
-};
+ led_strip: ws2812@0 {
+        compatible = "worldsemi,ws2812-spi";
+
+
+
+        /* WS2812 */
+        chain-length = <18>; /* 6 keys have underglow at the moment */
+
+
+        color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
+    };
 
 / {
     keymap {

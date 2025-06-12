@@ -11,13 +11,13 @@
 &pinctrl {
     spi3_default: spi3_default {
         group1 {
-            psels = <NRF_PSEL(SPIM_MOSI, 0, 6)>;
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 9)>;
         };
     };
 
     spi3_sleep: spi3_sleep {
         group1 {
-            psels = <NRF_PSEL(SPIM_MOSI, 0, 6)>;
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 69)>;
             low-power-enable;
         };
     };
@@ -59,9 +59,9 @@
         default_layer {
             bindings = <
                 &kp ESC   &kp SPACE
-                &kp N1    &kp GRAVE &kp N3   &kp BSPC      
-                &kp N7    &kp N8    &kp N9   &kp MINUS 
-                &kp N4    &kp N5    &kp N6
+                &ext_power EP_ON    &ext_power EP_OFF &kp N3   &kp BSPC      
+                &rgb_ug RGB_EFF    &rgb_ug RGB_TOG    &rgb_ug RGB_EFR   
+                &kp N4    &kp N5    &kp N6   &kp MINUS 
                 &kp N1    &kp N2    &kp N3 
                 &kp N0    &kp GRAVE          &kp ENTER
                
@@ -74,8 +74,8 @@
                 
                 &kp ESC   &kp SPACE
                 &kp N1    &kp GRAVE &kp N3   &kp BSPC      
-                &kp N7    &kp N8    &kp N9   &kp MINUS 
-                &kp N4    &kp N5    &kp N6
+                &kp N7    &kp N8    &kp N9    
+                &kp N4    &kp N5    &kp N6   &kp MINUS
                 &bt BT_SEL 1    &bt BT_SEL 0   &bt BT_CLR 
                 &bt BT_SEL 2    &bt BT_SEL 3          &bt BT_SEL 4
             >;
@@ -84,8 +84,8 @@
             bindings =<
                 &kp ESC   &kp SPACE
                 &kp N1    &kp GRAVE &kp N3   &kp BSPC      
-                &kp N7    &kp N8    &kp N9   &kp MINUS 
-                &kp N4    &kp N5    &kp N6
+                &kp N7    &kp N8    &kp N9   
+                &kp N4    &kp N5    &kp N6   &kp MINUS 
                 &kp N1    &kp N2    &kp N3 
                 &kp N0    &kp GRAVE          &kp ENTER
             >;
@@ -95,8 +95,8 @@
             bindings = <
                 &kp ESC   &kp SPACE
                 &kp N1    &kp GRAVE &kp N3   &kp BSPC      
-                &kp N7    &kp N8    &kp N9   &kp MINUS 
-                &kp N4    &kp N5    &kp N6
+                &kp N7    &kp N8    &kp N9   
+                &kp N4    &kp N5    &kp N6   &kp MINUS 
                 &kp N1    &kp N2    &kp N3 
                 &kp N0    &kp GRAVE          &kp ENTER
             >;
